@@ -1,0 +1,13 @@
+1. Changes made to nltools to directly call preprocess function without using apply function
+2. Working on ‘pipeline object’ (calling multiple  functions at once) - have some bugs to be fixed
+3. Had a session on y9c previously , another session required on y9c ?
+4. 2 use cases properly done, using airline sentiment analysis as another use case (total 4 use cases)
+5.  Currently writing the design document - 
+    1. Next steps in the library
+    2. There are improvements which can be made to the current code base - add deep learning functionality , add parallelisation to code - till when this needs to be done
+initial version of spacy, nltk with nltools integration is complete, in this approach , in a separate py file for spacy and nltk  , a;; functions were imported
+nltools_spacy.py has all the functions for spacy imported
+nltools_nltk.py has all the functions for nltk imported
+these two files were imported as module in nltools
+the ask - import spacy and nltk through nltools , have a single nlp library ,
+tried different approaches like import spacy and nltk codebase directly , but facing some issues due to presence of relative imports in spacy init.py files
